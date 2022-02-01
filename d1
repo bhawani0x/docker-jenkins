@@ -1,0 +1,24 @@
+pipeline{
+    agent {
+        doclerfile true 
+    }
+    stages{
+        // stage('GitCheckout'){
+        //     steps{
+        //         git checkout <url>
+
+        //     }
+        // }
+        // stage('Build'){
+        //     script {
+        //     dockerImage = docker.build registry + ":$BUILD_NUMBER"
+        //     }
+        // }
+        // stage('Deploy to docker')
+        stage('PRINT'){
+            steps{
+                echo "hello "
+            }
+        }
+    }
+}
